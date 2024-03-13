@@ -1,0 +1,68 @@
+.pixel-bubble {
+    background-image: url('img/bulle_pixel_copie.png');
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center;   /* Ajustez à la largeur souhaitée */
+    height: 500px; /* Ajustez à la hauteur souhaitée */
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 50px 50px 50px 50px;
+    font-family: Verdana;
+    font-size: 20px;
+    margin: 100px;
+    color: white;
+    image-rendering: pixelated;  /* Cette propriété conserve l'aspect pixelisé lorsque vous agrandissez l'image */
+}
+
+p {
+    padding: 30% 35% 30% 30%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+  }
+
+.box a {
+font-size: 23px;
+margin-bottom: 10px;
+color: #00FF00;
+margin-bottom: 20px;
+margin-right: 60px;
+}
+
+.box a:hover {
+color: #92c9af;
+}
+
+a {
+color: #4CAF50;
+text-decoration: none;
+margin: 0 10px;
+}
+
+div {
+    margin-top: 50px;
+}
+
+body {
+    font-family: Verdana;
+    text-align: center;
+    background-color: black;
+    color: white;
+  }
+
+header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+  }

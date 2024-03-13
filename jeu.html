@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Plus ou moins</title>
+    <link rel="stylesheet" href="jeu.css" />
+    <script src=jeu.js></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Plus ou moins</h1>
+    <h2>Le jeu !</h2>
+    <p id="score">Score : 0</p>
+    <button onclick="LancerJeu()">Lancer le jeu</button>
+    <a>
+        <p id="nb1">0</p>
+        <button onclick="verifPetit()"> < </button>
+                <button onclick="verifEgal()"> = </button>
+                <button onclick="verifGrand()"> > </button>
+                <p id="nb2">5</p>
+    </a>
+    <p id="erreur"> </p>
+    <p id="Highscore">Highscore : 0</p>
+</body>

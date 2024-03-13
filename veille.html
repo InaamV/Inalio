@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio d'Inaam</title>
+    <link rel="stylesheet" href="veille.css">
+    <script src="veille.js" defer></script>
+</head>
+
+<body>
+    <nav>
+        <div class="box">
+            <a href="index.html">Accueil</a>
+            <a href="entreprise.html">Entreprise</a>
+            <a href="realisation1.html">Realisations</a>
+            <a href="veille.html">Veille</a>
+            <a href="bilan.html">Bilan</a>
+        </div>
+    </nav>
+
+    <section id="top-section" class="top-section">
+        <div class="top-section-content">
+            <h2>Cryptographie</h2>
+            <p>La cryptographie est l'étude des techniques permettant de sécuriser les informations en les rendant
+                incompréhensible pour des personnes non autorisée mais en en rendant possible aux personnes légitime de
+                déchiffrer et donc lire, comprendre l'information. </p><br>
+            <p>Outils de veille : Google Alert, Feedly</p>
+        </div>
+    </section>
+
+    <!-- <p>Trier :</p> -->
+    <select name="order" onchange="sortArticle(event)">
+        <option value="date"> Date</option>
+        <option value="notes"> Meilleurs notes </option>
+    </select>
+    <div class="articles">
+        <a href="https://www.ouest-france.fr/sciences/la-cryptographie-des-algorithmes-au-cur-du-quotidien-et-des-historiens-83264c0e-1691-11ee-ae57-25b1d1d54a03"
+            class="article-card">
+            <h2> La cryptographie, des algorithmes au cœur du quotidien... et des historiens</h2>
+            <img width=300px src="crypto1.jpeg">
+            <span class="date" data-date="09/07/2023"> 07/09/2023</span>
+            <span class="note" data-note="4"> 4/5</span>
+            <p>La cryptographie est la science des codes secrets, que l’on appelle aussi chiffrement. Pour pouvoir
+                comprendre un message ou une communication, il faut en connaître la clé. Un peu comme pour ouvrir un
+                cadenas de vélo, résume Aurore Guillevic.</p>
+        </a>
+
+        <a href="https://www.pourlascience.fr/sd/physique/cryptographie-quantique-le-protocole-qui-echappe-aux-espions-25926.php"
+            class="article-card">
+            <h2> Cryptographie quantique : le protocole qui échappe aux espions </h2>
+            <img width=300px src="crypto_2.jpeg">
+            <span class="date" data-date="12/25/2023"> 25/12/2023</span>
+            <span class="note" data-note="3"> 3/5</span>
+            <p>L’histoire montre que les spécialistes n’ont pas manqué d’imagination pour résoudre ce problème. Les
+                exemples de techniques de chiffrement sont nombreux, à l’instar du chiffre de César (par décalage des
+                lettres de l’alphabet) ou encore de la machine Enigma utilisée par l’armée allemande pendant la Seconde
+                Guerre mondiale.</p>
+        </a>
+
+        <a href="https://cryptoast.fr/cryptographie-role-bitcoin/" class="article-card">
+            <h2> Qu'est-ce que la cryptographie et quel est son rôle dans Bitcoin ? </h2>
+            <img width=300px src="cryptographie-role-bitcoin-1.png.webp">
+            <span class="date" data-date="10/14/2023"> 14/10/2023</span>
+            <span class="note" data-note="4"> 4/5</span>
+            <p>La cryptographie est au croisement de nombreux services disponibles avec l’informatique moderne comme la
+                connexion sécurisée à Internet, le chiffrement des mots de passe ou même le chiffrement des transactions
+                de cryptomonnaies. Toutes ces utilisations ont un dénominateur commun : la confidentialité et la
+                sécurité. Découvrez les origines de la cryptographie, ses composantes principales ainsi que son utilité
+                au sein de Bitcoin.</p>
+        </a>
+
+        <a href="https://www.leaders.com.tn/article/35295-leila-ben-abdelghani-et-loubna-ghammam-la-cryptologie-au-coeur-des-defis-tunisiens"
+            class="article-card">
+            <h2> La cryptologie au cœur des défis tunisiens </h2>
+            <img width=300px src="tunisie_crypto.jpeg">
+            <span class="date" data-date="10/28/2023"> 28/10/2023</span>
+            <span class="note" data-note="3"> 3/5</span>
+            <p>En juillet 2023 a eu lieu Africacrypt, un événement scientifique majeur, dont le but est de faire
+                progresser et de promouvoir le domaine de la cryptologie sur le continent africain.
+                Cette quatorzième conférence internationale organisée à Sousse en Tunisie a permis de présenter les
+                derniers travaux de recherche dans ce domaine</p>
+        </a>
+
+    </div>
+
+
+
+    <footer>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/inaam-verteneuille/">mon compte linkedin</a>
+            <a
+                href="https://www.esiee-it.fr/fr">La page de mon école</a>
+            <a href="https://www.holiseum.com">La page de mon entreprise</a>
+        </div>
+        <div class="footer-content">
+            <p>© 2023 InaSite.com. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

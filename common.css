@@ -1,0 +1,39 @@
+h1 {
+    color: black;
+    text-align: center;
+    border: 3px black solid;
+    border-radius: 10px / 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+body {
+    font-family: Verdana;
+    text-align: center;
+    color: aliceblue;
+  }
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: rgb(46, 213, 66);
+}
+
+a:visited {
+    color:darkgreen;
+}
+
+footer {
+    background-color: #344e41;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+  }
+
+footer a {
+    text-decoration: none;
+    color: aliceblue;
+}

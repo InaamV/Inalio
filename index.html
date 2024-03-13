@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio d'Inaam</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav>
+    <div class="box">
+      <a href="index.html">Accueil</a>
+      <a href="entreprise.html">Entreprise</a>
+      <a href="realisation1.html">Realisations</a>
+      <a href="veille.html">Veille</a>
+      <a href="bilan.html">Bilan</a>
+    </div>
+  </nav>
+
+  <section id="top-section" class="top-section">
+    <div class="top-section-content">
+      <h2> Moi, mon parcours</h2>
+      <p> Hello ! Je suis Inaam Verteneuille. Après un baccalauréat spécialités mathématiques et Numérique Science de l'informatiques, je prépare maintenant un BTS SIO (Services Informatique aux Organisations) option SLAM (Solutions Logicielles et Applications Métiers) à l'Esiee-it.</p>
+    </div>
+    <div id="image" class="top-section-content">
+      <img src="img/indexpto.JPG" alt="me">
+    </div>
+  </section>
+
+  <section id="pastel-fond">
+    <div class="container">
+      <img src="img/Animation - ace.gif" alt="petit GIF">
+    </div>
+    <div id="centre_dinterets">
+      <h2>En quelques points, mes principaux centres d'intérêts :</h2>
+      <ul>
+        <li>La musique (essentiellement K-POP !)</li>
+        <li>Le théâtre</li>
+        <li>La danse</li>
+        <li>Les jeux (vidéo et de société)</li>
+        <li>La photographie de paysages</li>
+        <li>Voyager</li>
+      </ul>
+      <div class="slider-container">
+        <div id="slider" class="slider">
+          <div class="slide">
+            <img src="img/fly.HEIC" alt="Image 1">
+          </div>
+          <div class="slide">
+            <img src="img/rail.HEIC" alt="Image 2">
+          </div>
+          <div class="slide">
+            <img src="img/kpop.jpg" alt="Image 3">
+          </div>
+        </div>
+        <button class="prev" onclick="prevSlide()"><</button>
+        <button class="next" onclick="nextSlide()">></button>
+      </div>
+    </div>
+  </section>
+
+  <section id="white-section">
+    <div id="langages">
+      <h2>Langages de prédilection</h2>
+      <ul>
+        <li><img src="img/python.png" alt="Logo Python">Python (Django)</li>
+        <li><img src="img/html-5.png" alt="Logo Html">HTML</li>
+        <li><img src="img/css-3.png" alt="Logo Css">CSS</li>
+        <li><img src="img/java.png" alt="Logo Java">Java</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="bottom-section">
+    <div id="Certifications">
+      <h2>Certifications</h2>
+      <ul>
+        <li><img src="CNIL_logo.png"><a href="certif/RGPD.pdf">CNIL</a></li>
+        <li><img src="SecNumAcadémie.png">SecNumANSSI</li>
+        <li><img src="Logo_secretdefense.webp"><a href="certif/protection_du_secret.pdf">La protection des secrets</a></li>
+      </ul>
+    </div>
+    <div id="Challenges">
+      <h2>Challenges:</h2>
+      <ul>
+        <li><img src="img/rootme.png" alt="Logo Rootme"><a href="https://www.root-me.org" target="_blank">Rootme</a></li>
+        <li><img src="img/cryptohack.png" alt="Logo CryptoHack"><a href="https://cryptohack.org" target="_blank">CryptoHack</a></li>
+      </ul>
+      <h3>Challenges ROOTME web client</h3>
+      <ul>
+        <li>HTML - boutons désactivés</li>
+        <li>Javascript - Authentification</li>
+        <li>Javascript - Authentification 2</li>
+        <li>Javascript - Source</li>
+        <li>Javascript - Obfuscation 1</li>
+        <li>Javascript - Obfuscation 2</li>
+        <li>Javascript - Obfuscation 3</li>
+      </ul>
+      <h3>Challenges ROOTME web server</h3>
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RootMe Challenges</title>
+      </head>
+      <body>
+        <h1>Nombre de challenges réussis sur RootMe :</h1>
+        <p id="challengesCount">Chargement en cours...</p>
+        <script>
+          const userId = 708570; // Remplacez par l'ID de votre utilisateur RootMe
+          const apiKey = '708570_b3b1c3e0c1edf828b5e23983e6057578c4262a19e3d0025ad4ac287fffd016cf'; // Remplacez par votre clé d'API ou le jeton d'accès approprié
+          const challengesCountElement = document.getElementById('challengesCount');
+          function fetchChallengesCount() {
+            // Endpoint pour récupérer les données d'un utilisateur spécifique
+            const apiUrl = `https://api.www.root-me.org/auteurs/${userId}`;
+            fetch(apiUrl, {
+              headers: {
+                'Cookie': `spip_session=${apiKey}`
+              }
+            })
+            .then(response => response.json())
+            .then(data => {
+              const challengesCount = data.challenges.length;
+              challengesCountElement.textContent = `Nombre de challenges réussis : ${challengesCount}`;
+            })
+            .catch(error => {
+              console.error('Erreur lors de la récupération des données depuis l\'API :', error);
+              challengesCountElement.textContent = 'Erreur lors de la récupération des données.';
+            });
+          }
+          fetchChallengesCount();
+        </script>
+      </body>
+      </html>
+    </div>
+  </section>
+
+  <footer>
+    <div class="social-media">
+      <a href="https://www.linkedin.com/in/inaam-verteneuille/">mon compte linkedin</a>
+      <a href="https://www.esiee-it.fr/fr">La page de mon école</a>
+      <a href="https://www.holiseum.com">La page de mon entreprise</a>
+    </div>
+    <div class="footer-content">
+      <p>© 2023 InaSite.com. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #f4f1e8;
+}
+
+nav {
+  background-color: #344e41;
+  padding: 40px ;
+  text-align: center;
+  margin: 0;
+}
+
+.box a {
+  color: #f4f1e8;
+  margin: 0 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 25px;
+  border-radius: 5px;  
+  transition: color 0.3s, background-color 0.3s; 
+}
+
+.box a:hover {
+  background-color: #f4f1e8;
+  color: black;
+}
+
+#top-section {
+  background: #f4f1e8;
+  padding: 170px 90px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top-section {
+  display:flex;
+  justify-content: center;
+}
+
+
+#top-section h2{
+  color: #333;
+  font-size: 40px;
+}
+
+#top-section div {
+  flex: 1;
+}
+
+#top-section img {
+  max-width: 300px;
+  border-radius: 10px;
+}
+
+#pastel-fond {
+  background-color: #a3b18a;
+  padding: 100px;
+  position: relative;
+}
+
+#centre_dinterets {
+  background-color: #f4f1e8;
+  padding: 20px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+#centre_dinterets h2 {
+  font-size: 32px;
+}
+
+#centre_dinterets ul {
+  font-size: 23px;
+}
+
+#white-section {
+  padding: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#langages ul {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  opacity: 0; 
+  transform: translateX(100px); 
+  transition: opacity 1s, transform 1s; 
+  text-align: left;
+}
+
+#langages h2{
+  text-align: left;
+  margin-left: 10px;
+  font-size: 32px;
+}
+
+#langages li {
+  background-color: #a3b18a;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  font-size: 23px;
+}
+
+#langages img {
+  width: 3%;
+  margin-right: 10px;
+}
+
+#bottom-section {
+  padding: 50px 20px;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#Certifications, #Challenges {
+  flex: 1; 
+  padding: 0 20px; 
+}
+
+#Challenges ul, #Certifications ul {
+  list-style-type: none; 
+}
+
+#Challenges li img, #Certifications li img {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+  margin: 8px;
+}
+
+footer {
+  background-color: #344e41;
+  padding: 50px 0;
+  color: white;
+  text-align: center;
+}
+
+.container {
+  text-align: center;
+}
+
+li a {
+  color: black; 
+  text-decoration: none; 
+}
+
+li a:hover {
+  color: #344e41; 
+}
+
+.social-media a {
+  color: white; 
+  text-decoration: none; 
+  font-size: 23px; 
+  margin: 5px;
+}
+
+.social-media a:hover {
+  color: #a3b18a; 
+}
+
+div#image {
+  text-align: center;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+}
+
+.slider img {
+  width: 250px;
+  height: auto;
+  margin-left: 200px;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background-color: #a3b18a;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
